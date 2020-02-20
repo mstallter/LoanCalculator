@@ -1,11 +1,18 @@
-
-
-{% extends 'base.html' %}
+{% extends "base.html" %}
 
 {% block body %}
 
-	<h2> This is my Flask server! </h2>
-
-	<img src="{{ url_for('static', filename='images/flask.jpg') }}" />
+<form> 
+	<label class="label">Loan Amount</label>
+	<input type="text" name="amt" id="AMT" required autofocus>
+	<br>
+	<br>
+	<label class="label">Number of Payments</label>
+	<input type="text" name="payments" id="PAYMENTS" required>
+	<br>
+	<br>
+	<label class="label">Periodic Interest Rate</label>
+	<input class="text" name="intrate" id="INTRATE" required>
+</form>
 
 {% endblock %}
