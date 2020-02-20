@@ -5,11 +5,13 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html', pageTitle='Flask Server Home Page')
+    #A = form[]
+    #n = form[]
+    #i = form []
+    #D = (((1+i)^n)-1) / (i(1+i)^n)
+    #P = round(A/D, 2)
 
-@app.route('/mike')
-def mike():
-    return render_template('mike.html', pageTitle='About Mike')
+    return 'Your loan payment is'
 
 if __name__ == '__main__':
     app.run(debug=True)
