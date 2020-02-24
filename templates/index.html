@@ -2,7 +2,7 @@
 
 {% block body %}
 
-<form> 
+<form method='POST'> 
 	<label class="label">Loan Amount</label>
 	<input type="text" name="amt" id="AMT" required autofocus>
 	<br>
@@ -13,6 +13,8 @@
 	<br>
 	<label class="label">Periodic Interest Rate</label>
 	<input class="text" name="intrate" id="INTRATE" required>
+	<br>
+	<button type="reset" name="Reset">Clear</button><button type="submit" name="submit">Calculate</button>
 </form>
 
 {% endblock %}
