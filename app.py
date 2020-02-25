@@ -12,8 +12,8 @@ def index():
         i = float(form["intrate"]) / 12
         D = (((1+i)**n)-1)/(i*(1+i)**n)
         P = round(A/D, 2)
-        print('Your loan payment is $', P, sep=' ')
-    return render_template('index.html', pageTitle='loanCalc')
-
+        final = 'Your loan payment is $' + str(P)
+        return render_template('index.html', display=final, pageTitle='loanCalc')   
+    return render_template('index.html', pageTitle='loanCalc' )
 if __name__ == '__main__':
     app.run(debug=True)
